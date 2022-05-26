@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.text-center{
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.mx-auto{
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  margin: auto;
+}
+.main{
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+.search{
+  width: 100%;
+  height: 100px;
+  margin: 15px 0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  
+}
+.title{
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 33px;
+}
+.form{
+  width: 70%;
+  display:flex;
+  margin: auto;
+}
+.form > input[type="text"]{
+  background-color: #F7F7F7;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  flex: 2;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+.form > input[type="text"]:focus{
+  outline: none;
+}
+.form input[type="submit"]{
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  border: none;
+  background: #0794E3;
+  color: white;
+}
+.icon-search{
+  color:white;
+}
+.btn-search{
+  height: 40px;
+  display:flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  background: #0794E3;
+  border-radius: 4px;
+}
+.section-main{
+  width: 100%;
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.card{
+  width: 32%;
+  max-height: 450px;
+  position:relative;
+}
+.card-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center;
+  border-radius: 15px;
+  
+}
+.card-icon{
+  position:absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 4rem;
+  transition: all 0.5s;
+}
+.card-icon:hover{
+  cursor: pointer;
+  font-size: 4.5rem;
+  right: 10px;
+}
+.section-main::after{
+  content: '';
+  width: 100%;
+  border-bottom: 3px solid #DADADA;
+  margin: 15px 0;
+}
+.section-fav{
+  margin-bottom: 50px;
+}
+.card-fav{
+  width: 24%;
+  max-height: 250px;
+  position:relative;
+
+}
+.header-fav{
+  display:flex;
+  align-items: center;
+  gap: 35px;
+  margin: 15px 0;
+}
+.header-fav > h2{
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 16px;
+}
+.icon-fav{
+  font-size: 1.5rem;
+}
+.container-fav{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
